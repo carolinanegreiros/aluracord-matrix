@@ -1,5 +1,5 @@
 import { Box, Button, Text, TextField, Image } from '@skynexui/components';
-import { useState } from 'React'
+import { useState } from 'react'
 import appConfig from '../config.json';
 
 function GlobalStyle() {
@@ -62,7 +62,7 @@ function Titulo(props) {
 
 export default function PaginaInicial() {
     //const username = 'carolinanegreiros';
-    const [surname, setSurname] = useState('carolinanegreiros');
+    const [username, setUsername] = useState('carolinanegreiros');
     
  
     return (
@@ -106,7 +106,7 @@ export default function PaginaInicial() {
 
             <input
                 type="text"
-                value={username}
+                value = {username}
                 onChange={function (event) {
                 console.log('usuario digitou', event.target.value)
                 //onde ta o valor?
